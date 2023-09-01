@@ -1,0 +1,109 @@
+.cart2-ellipse{
+    display: flex;
+    justify-content: center;
+}
+
+.cart2-card {
+    position: relative;
+    top: -150px;
+    // width: 100%;
+    // height: 100%;
+    background: #F4FFFD;
+    border-radius: 8px;
+    padding: 60px;
+    .cart2-heading{
+        display: flex;
+        justify-content: center;
+        .heading-typo {
+            color: #2E475D !important;
+            font-size: 48px !important;
+            font-family: 'Lexend Deca' !important;
+            font-weight: 500px !important;
+            line-height: 57.60px !important;
+            word-wrap: break-word !important;
+        }
+    }
+    .cart2-grid-section{
+        margin-top: 64px;
+        
+        .cart2-grid-left{
+            .heading{
+                color: #2E475D;
+                font-size: 22px;
+                font-family: 'Lexend Deca';
+                font-weight: 700;
+                // line-height: 31.90px;
+                word-wrap: break-word
+            }
+            .paragraph {
+                color: #2E475D;
+                font-size: 18px;
+                font-family: 'Lexend Deca';
+                font-weight: 300;
+                line-height: 28px;
+                word-wrap: break-word
+            }
+        }
+        .cart2-grid-right{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.customer-relationship{
+    padding-left: 70px;
+    position: relative;
+    top: 10%;
+    .paragraph{
+        color: #38CAB5;
+        font-size: 16px;
+        font-family: "Plus Jakarta Sans";
+        font-weight: 400;
+        word-wrap: break-word
+    }
+    .title{
+        color: #1F2937;
+        font-size: 32px;
+        font-family: 'Plus Jakarta Sans';
+        font-weight: 600;
+        line-height: 38.40px;
+        word-wrap: break-word
+    }
+    .description{
+        color: #6B7280;
+        font-size: 18px;
+        font-family: "Plus Jakarta Sans";
+        font-weight: 400;
+        line-height: 32px;
+        word-wrap: break-word
+    }
+    button{
+        background-color: #38CAB5;
+        color: white;
+        font-size: 18px;
+        font-family: Plus Jakarta Sans;
+        font-weight: 500;
+        line-height: 28px;
+        word-wrap: break-word;
+        border: none;
+        padding: 18px;
+        border-radius: 12px;
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .customer-relationship {
+        padding-left: 0px !important;
+        // position: unset;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cart2-grid-right{
+        img{
+            width: 100% !important;
+        }
+     }
+}

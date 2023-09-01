@@ -1,0 +1,44 @@
+.service-card{
+    padding: 30px;
+    width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+    .card-top{
+        display: flex !important;
+        justify-content: space-between !important;
+        // button{
+            // background-color: #fafafa;
+            // border-radius: 12px;
+            // border: 0px solid #fafafa;
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        // }
+        .arrow-icons{
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .card-title{
+            span{
+                color: #1F2937;
+                font-size: 20px;
+                font-family: Plus Jakarta Sans;
+                font-weight: 700;
+                line-height: 30px;
+                word-wrap: break-word
+            }
+    }
+
+    .card-description{
+        p{
+            color: #64748B;
+            font-size: 16px;
+            font-family: Plus Jakarta Sans;
+            font-weight: 400;
+            line-height: 24px;
+            word-wrap: break-word
+        }
+    }
+}
