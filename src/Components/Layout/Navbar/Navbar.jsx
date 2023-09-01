@@ -11,7 +11,7 @@ import MobileHeader from "./MobileHeader";
 export const Navbar = () => {
     const path = [
         {
-          route: "/home",
+          route: "/#",
           name: "Home",
           isSubMenu: false,
           list: null,

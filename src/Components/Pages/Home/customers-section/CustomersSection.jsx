@@ -32,7 +32,7 @@ export const CustomersSection = () => {
   return (
     <Container sx={{marginTop: '70px'}}>
     <Box className='customers-review' sx={{display: 'flex', justifyContent: 'space-between'}}>
-        <div style={{color: '#1F2024', fontSize: '45px', fontFamily: 'Plus Jakarta Sans', fontWeight: '600', wordWrap: 'break-word'}}>Our customers love us</div>
+        <div className='customer-review-title' style={{color: '#1F2024', fontSize: '45px', fontFamily: 'Plus Jakarta Sans', fontWeight: '600', wordWrap: 'break-word'}}>Our customers love us</div>
         <div className='controls'>
             <button onClick={sliderRef?.slickPrev}>
                 <ArrowBackIosIcon />

@@ -23,6 +23,7 @@ const MobileHeader = ({ path }) => {
         style={{
           top: active ? "100px" : "-600px",
           opacity: active ? "1" : "0",
+          zIndex:200
         }}
       >
         <ul className="navbar-list">

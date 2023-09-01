@@ -16,7 +16,7 @@ export const Footer = () => {
               </div>
             </Box>
             <br/>
-            <Box sx={{display: 'flex', justifyContent: 'center'}}>
+            <Box className="footer-links" sx={{display: 'flex', justifyContent: 'center'}}>
                     <span className='footer-nav'>Cookie Policy</span>
                     <span className='footer-nav'>Privacy Policy</span>
                     <span className='footer-nav'>Social Media Links</span>
