@@ -1,0 +1,13 @@
+version: '3'
+services:
+  airapplecart-sales-site:
+    container_name: airapplecart-sales-site
+    build:
+      dockerfile: Dockerfile
+      context: .
+      target: runner
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx-config:/etc/nginx/conf.d/
