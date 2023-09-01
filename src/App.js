@@ -5,12 +5,13 @@ import 'slick-carousel/slick/slick-theme.css'
 
 import { Layout } from './Components/Layout';
 import { Home } from './Components/Pages/Home/Home';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Layout>
-      <Home />
-    </Layout>
+    <Routes>
+      <Route path="/" element={<Layout><Home /></Layout>} />
+    </Routes>
   );
 }
 
