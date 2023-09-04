@@ -14,8 +14,8 @@ export const AppleCart1 = () => {
         },
     ]
   return (
-    <Container>
-        <Box sx={{marginTop: '100px', background: '#F8F8F8', borderRadius: '15px', padding: '60px', paddingTop:'0px', height:'870px'}}>
+    <Container maxWidth="xl">
+        <Box sx={{marginTop: '100px', background: '#F8F8F8', borderRadius: '15px', padding: '60px', paddingTop:'0px', height:'auto'}}>
             <img style={{position: 'relative', left: '75%', top: '5%'}} src='assets/Home/circle-icon.svg' alt='Icons' />
             <div style={{display: 'flex', justifyContent: 'center', marginBottom: '11px'}}>
                 <span className='heading-top'>What Is Air AppleCart</span>

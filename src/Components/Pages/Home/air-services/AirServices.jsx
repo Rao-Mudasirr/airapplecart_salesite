@@ -39,7 +39,7 @@ export const AirServices = () => {
   ]
 
   return (
-    <Container sx={{marginTop: '100px'}}>
+    <Container maxWidth="xl" sx={{marginTop: '100px'}}>
         <Box>
             <Box sx={{display: 'flex', justifyContent: 'center'}}>
               <div style={{color: '#6B7280', fontSize: '16px', fontFamily: 'Plus Jakarta Sans', fontWeight: '600px', lineHeight: '24px', letterSpacing: '1.25px', wordWrap: 'break-word'}}>AirApple Cart PRODUCTS</div>

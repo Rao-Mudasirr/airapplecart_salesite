@@ -5,7 +5,7 @@ import { cartData2 } from './cart2-data'
 
 export const AppleCart2 = () => {
   return (
-    <Container sx={{marginTop: '120px'}}>
+    <Container maxWidth="xl" sx={{marginTop: '120px'}}>
         <Box>
             <div className='cart2-ellipse'>
                 <img src={'assets/Home/Ellipse 22.svg'} />

@@ -11,7 +11,7 @@ export const CustomersSection = () => {
 
   const sliderSettings = {
     arrows: false,
-    slidesToShow: 3,
+    slidesToShow: 3.5,
     slidesToScroll: 1,
     infinite: false,
     responsive: [
@@ -30,7 +30,7 @@ export const CustomersSection = () => {
     ],
   }
   return (
-    <Container sx={{marginTop: '70px'}}>
+    <Container maxWidth="xl" sx={{marginTop: '70px'}}>
     <Box className='customers-review' sx={{display: 'flex', justifyContent: 'space-between'}}>
         <div className='customer-review-title' style={{color: '#1F2024', fontSize: '45px', fontFamily: 'Plus Jakarta Sans', fontWeight: '600', wordWrap: 'break-word'}}>Our customers love us</div>
         <div className='controls'>

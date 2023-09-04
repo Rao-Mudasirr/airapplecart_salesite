@@ -6,7 +6,7 @@ import './faq.scss';
 
 export const FAQ = () => {
   return (
-    <Container sx={{marginTop:'120px', marginBottom:'50px'}}>
+    <Container maxWidth="xl" sx={{marginTop:'120px', marginBottom:'50px'}}>
         <Box sx={{display: 'flex', justifyContent: 'center'}}>
             <div className='faq-heading'>Frequently Asked Questions</div>
         </Box>

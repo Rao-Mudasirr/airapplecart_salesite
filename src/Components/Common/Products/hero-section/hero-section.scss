@@ -1,19 +1,21 @@
-.Hero-Section {
+.Hero-Section2 {
     width: 100%;
     background-image: url("../../../../../public/assets/Home/Ellipse 101.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
   
-  .hero-top {
+  .hero-top2 {
     // Unleash the Power
+    display: flex;
+    justify-content: center;
     color: #111827;
     font-size: 72px;
     font-family: "Plus Jakarta Sans";
     font-weight: 600;
     line-height: 104px;
     word-wrap: break-word;
-    .apple-cart {
+    .apple-cart2 {
       color: #fafafa;
       background-color: #2ec7b1;
       padding-left: 40px;
@@ -28,14 +30,15 @@
       word-wrap: break-word;
     }
   }
-  .hero-section-content{
+  .hero-section-content2{
     padding-top: 95px;
     padding-bottom: 50px; 
     display: flex; 
     justify-content: center;
+    width: 70%;
   }
   
-  .hero-middle {
+  .hero-middle2 {
     margin-top: 50px;
     color: #1f2937;
     text-align: center;
@@ -45,7 +48,7 @@
     line-height: 32px;
     word-wrap: break-word;
   }
-  .hero-paragraph {
+  .hero-paragraph2 {
     color: #6b7280;
     font-size: 18px;
     font-family: Plus Jakarta Sans;
@@ -54,7 +57,7 @@
     text-align: center;
     word-wrap: break-word
   }
-  .hero-btn {
+  .hero-btn2 {
     text-transform: capitalize !important;
     color: #1f2937 !important;
     font-size: 16px !important;
@@ -66,20 +69,20 @@
     padding: 12px !important;
     border: 1px solid lightgray !important;
   }
-  .arrow-image{
+  .arrow-image2{
     position: absolute;
     top: 150px; 
     left: 70px;
   }
   
-  .stars-icons{
+  .stars-icons2{
     position: absolute; 
     top: 80px; 
     left: 80%;
   }
   
   @media screen and (max-width: 900px) {
-      .arrow-image{
+      .arrow-image2{
         position: absolute;
         top: 150px; 
         left: 0px;
@@ -87,16 +90,16 @@
   }
   
   @media screen and (max-width: 650px) {
-      .arrow-image{
+      .arrow-image2{
         display: none;
       }
-      .stars-icons{
+      .stars-icons2{
         display: none;
       }
-      .hero-section-content{
+      .hero-section-content2{
         display: unset;
         justify-content: unset;
-      .hero-content-size{
+      .hero-content-size2{
         width: auto !important;
       }
       }

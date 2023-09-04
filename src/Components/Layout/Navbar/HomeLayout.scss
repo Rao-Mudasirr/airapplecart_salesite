@@ -348,3 +348,10 @@
     }
   }
   
+  @media screen and (max-width: 900px) {
+    .navbar-btn-parent{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  }

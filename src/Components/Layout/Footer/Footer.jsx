@@ -9,7 +9,7 @@ import './footer.scss'
 export const Footer = () => {
   return (
     <div style={{width:'100%', background: '#F9FAFB'}}>
-        <Container sx={{padding: '20px'}}>
+        <Container maxWidth="xl" sx={{padding: '20px'}}>
             <Box sx={{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
               <div>
                 <img src='assets/Home/Logo.png' alt='Logo' />
