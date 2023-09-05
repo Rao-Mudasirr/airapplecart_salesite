@@ -2,24 +2,36 @@ FROM node:18 AS build
 
 WORKDIR /app
 
-COPY package*.json ./
-
-RUN npm install --legacy-peer-deps
-
 COPY . .
+
+RUN npm i -f
 
 RUN npm run build
 
-FROM nginx:1.21 AS runner
+FROM node:18-alpine AS runner
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+WORKDIR /app
 
+COPY --from=build /app/package*.json ./
 
-RUN rm -rf /usr/share/nginx/html/*
+COPY --from=build /app/build/ ./build
 
-
-COPY --from=build /app/build/ /usr/share/nginx/html
+COPY --from=build /app/node_modules ./node_modules
 
 EXPOSE 3000
 
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+ENTRYPOINT ["npm", "run", "serve"]
+
+########################################################
+
+FROM nginx:1.21-alpine AS web-server
+
+RUN apk add python3 python3-dev py3-pip build-base libressl-dev musl-dev libffi-dev rust cargo
+
+RUN pip3 install pip --upgrade
+
+RUN pip3 install certbot-nginx
+
+RUN mkdir /etc/letsencrypt
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
