@@ -13,20 +13,20 @@
   font-weight: 600;
   line-height: 104px;
   word-wrap: break-word;
-  .apple-cart {
-    color: #fafafa;
-    background-color: #2ec7b1;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 40px;
-    // font-size: 64px;
-    font-family: "Plus Jakarta Sans";
-    font-weight: 600;
-    line-height: 96px;
-    word-wrap: break-word;
-  }
+}
+.apple-cart {
+  color: #fafafa;
+  background-color: #2ec7b1;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 40px;
+  // font-size: 64px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 600;
+  line-height: 96px;
+  word-wrap: break-word;
 }
 .hero-section-content{
   padding-top: 95px;
@@ -84,6 +84,53 @@
       top: 150px; 
       left: 0px;
     }
+}
+
+@media screen and (max-width: 1092px) {
+  .apple-cart {
+    color: #fafafa;
+    // width: 100%;
+    background-color: #2ec7b1;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    display: inline-block;
+    font-size: 50px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    // line-height: 96px;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .apple-cart {
+    color: #fafafa;
+    // width: 100%;
+    background-color: #2ec7b1;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    display: inline-block;
+    font-size: 35px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    // line-height: 96px;
+    word-wrap: break-word;
+  }
+  .hero-top {
+    // Unleash the Power
+    color: #111827;
+    font-size: 52px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    line-height: 104px;
+    word-wrap: break-word;
+  }
 }
 
 @media screen and (max-width: 650px) {

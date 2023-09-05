@@ -15,6 +15,7 @@ export const HeroSection = () => {
     <Box className="hero-section-content">
         <div className='hero-content-size' style={{width:'60%'}}>
             <div className='hero-top'>Unleash the Power of <span className='apple-cart'>Air AppleCart</span></div>
+            
             <div className='hero-middle'>Elevate Your CRM Game for Seamless Growth!</div>
             <div>
                 <p className='hero-paragraph'>With seamless integration, data-driven insights, and personalised automation, we're redefining success for businesses of all sizes. Join us in transforming CRM and driving unparalleled success.</p>

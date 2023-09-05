@@ -9,14 +9,14 @@ import './footer.scss'
 export const Footer = () => {
   return (
     <div style={{width:'100%', background: '#F9FAFB'}}>
-        <Container sx={{padding: '20px'}}>
+        <Container maxWidth="xl" sx={{padding: '20px'}}>
             <Box sx={{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
               <div>
                 <img src='assets/Home/Logo.png' alt='Logo' />
               </div>
             </Box>
             <br/>
-            <Box sx={{display: 'flex', justifyContent: 'center'}}>
+            <Box className="footer-links" sx={{display: 'flex', justifyContent: 'center'}}>
                     <span className='footer-nav'>Cookie Policy</span>
                     <span className='footer-nav'>Privacy Policy</span>
                     <span className='footer-nav'>Social Media Links</span>

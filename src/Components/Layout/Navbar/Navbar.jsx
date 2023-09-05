@@ -11,7 +11,7 @@ import MobileHeader from "./MobileHeader";
 export const Navbar = () => {
     const path = [
         {
-          route: "/home",
+          route: "/#",
           name: "Home",
           isSubMenu: false,
           list: null,
@@ -43,7 +43,7 @@ export const Navbar = () => {
     
       return (
         <Box component={"nav"} className="navbar-parent">
-          <Container>
+          <Container maxWidth="xl">
             <Box className="navbar-box">
               <Box className="image-box">
                 <img src={'assets/Home/Logo.png'} alt="logo" width={153} height={38} loading="lazy" />

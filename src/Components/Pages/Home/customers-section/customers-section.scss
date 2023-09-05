@@ -78,9 +78,8 @@
     }
 }
   
-@media screen and (max-width: 800px) {
-    // .slider-main{
-    //     display: flex;
-    //     justify-content: center;
-    // }
+@media screen and (max-width: 500px) {
+    .customer-review-title{
+        font-size: x-large !important;
+    }
 }

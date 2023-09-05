@@ -6,11 +6,11 @@ import './faq.scss';
 
 export const FAQ = () => {
   return (
-    <Container sx={{marginTop:'120px', marginBottom:'50px'}}>
+    <Container maxWidth="xl" sx={{marginTop:'120px', marginBottom:'50px'}}>
         <Box sx={{display: 'flex', justifyContent: 'center'}}>
             <div className='faq-heading'>Frequently Asked Questions</div>
         </Box>
-        <Box sx={{padding: '100px', paddingTop: '60px'}}>
+        <Box className="accordian-body" sx={{padding: '100px', paddingTop: '60px'}}>
         {
             accordian_data?.map((acc, index)=>(
                 <Accordion key={acc?.id} elevation={0}>

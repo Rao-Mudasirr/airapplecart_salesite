@@ -1,0 +1,48 @@
+.feature-top{
+    margin-top: 60px;
+    .feature-top-title{
+        text-align: center;
+        color: #1F2937;
+        font-size: 40px;
+        font-family: Plus Jakarta Sans;
+        font-weight: 600;
+        line-height: 48px;
+        word-wrap: break-word
+    }
+    .feature-top-paragrph{
+        text-align: center;
+        // Browse through our list of features and  benefits to your liking
+        color: #6B7280;
+        font-size: 16px;
+        font-family: Plus Jakarta Sans;
+        font-weight: 500;
+        line-height: 24px;
+        word-wrap: break-word
+    }
+}
+
+.feature-cards{
+    margin-top: 63px;
+    .card-grid{
+        // background-color: #1F2937;
+        // display: flex;
+        // justify-content: center;
+        .card{
+            width: 450px;
+            height: 200px;
+            background: white; 
+            box-shadow: 0px 31.009492874145508px 62.018985748291016px rgba(0, 0, 0, 0.03);
+            border-radius: 5.17px;
+            text-align: center;
+            .card-icons{
+                width: 50px;
+                // height: 100%; 
+                opacity: 0.70;
+                text-align: center;
+                padding: 20px; 
+                border-radius: 10px;
+            }
+        }
+        
+    }
+}

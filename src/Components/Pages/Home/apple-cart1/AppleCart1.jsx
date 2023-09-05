@@ -14,8 +14,8 @@ export const AppleCart1 = () => {
         },
     ]
   return (
-    <Container>
-        <Box sx={{marginTop: '100px', background: '#F8F8F8', borderRadius: '15px', padding: '60px', paddingTop:'0px', height:'870px'}}>
+    <Container maxWidth="xl">
+        <Box sx={{marginTop: '100px', background: '#F8F8F8', borderRadius: '15px', padding: '60px', paddingTop:'0px', height:'auto'}}>
             <img style={{position: 'relative', left: '75%', top: '5%'}} src='assets/Home/circle-icon.svg' alt='Icons' />
             <div style={{display: 'flex', justifyContent: 'center', marginBottom: '11px'}}>
                 <span className='heading-top'>What Is Air AppleCart</span>
@@ -28,11 +28,11 @@ export const AppleCart1 = () => {
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 {
                     tabs?.map((val,index)=>(
-                        <span style={{background:'white', padding: '15px', borderRadius: '12px', width: '15%', margin: '12px', textAlign: 'center'}} key={index}>{val.title}</span>
+                        <span style={{background:'white', padding: '15px', borderRadius: '12px', width: 'auto', margin: '12px', textAlign: 'center'}} key={index}>{val.title}</span>
                     ))
                 }
             </div>
-            <Box sx={{display: 'flex',justifyContent: 'center', position: 'relative', top: '-70px'}}>
+            <Box className="apple-cart1-img" sx={{display: 'flex',justifyContent: 'center', position: 'relative', top: '-70px'}}>
                 <img src='assets/Home/applecart1-image.png' width={'100%'}/>
             </Box>
         </Box>
