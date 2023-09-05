@@ -82,4 +82,10 @@ export const benefits = [
             },
         ]
     }
-]
+];
+
+export const joinUs = {
+    title: 'Ready to Take Your Marketing to the Next Level?',
+    description: `Explore Air Marketer today and see how our innovative features and dedicated support can transform your marketing efforts. Whether you're a small business or a large enterprise, Air Marketer adapts to your needs and empowers you to succeed in today's competitive landscape. Start your journey with us and revolutionize your marketing strategies with Air Apple Cart.`,
+    img: '/assets/Products/JoinUs-Image.png',
+}

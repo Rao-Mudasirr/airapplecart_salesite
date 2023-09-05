@@ -13,7 +13,7 @@ export const Features = ({feature}) => {
             <Grid container>
                 {
                     feature?.map((val, index) => (
-                        <Grid key={val?.id} xs={12} sm={6} md={6} lg={4} xl={4}>
+                        <Grid key={val?.id} xs={12} sm={12} md={6} lg={4} xl={4}>
                             {/* <Box className='card-grid'> */}
                                 <div className='card'>
                                     <div className='card-icons' style={{background: val?.icon_color}}>

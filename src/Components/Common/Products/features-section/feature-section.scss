@@ -73,3 +73,21 @@
         
     // }
 }
+
+@media screen and (max-width: 900px) {
+    .feature-cards{
+        margin-top: 63px;
+        background-color: #fefefe;
+        text-align: center;
+            .card{
+                width: 95%;
+                margin-bottom: 5%;
+                height: 300px;
+                padding: 20px;
+                background: white; 
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.03);
+                border-radius: 5.17px;
+                text-align: center;
+            }
+        }
+}

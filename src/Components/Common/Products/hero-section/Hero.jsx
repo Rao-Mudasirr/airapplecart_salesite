@@ -18,8 +18,9 @@ export const Hero = ({hero}) => {
             <div>
                 <p className='hero-paragraph2'>Welcome to Air Marketer, the flagship marketing solution offered by Air Apple Cart. Just like the Marketing Hub in HubSpot, Air Marketer is designed to revolutionize your marketing strategies and elevate your business to new heights. With a suite of powerful tools and features at your fingertips, Air Marketer empowers you to create, execute, and measure impactful marketing campaigns with ease.</p>
             </div>
+            <br/>
             <div style={{display: 'flex', justifyContent: 'center'}}>
-                <Button variant="outlined" className='hero-btn'>Start Free Trial &nbsp; <KeyboardArrowRightIcon /></Button>
+                <span><img style={{width: '50px', height: '95px', background: '#F3F4F6', borderRadius: 22}} src='/hero-scroll-icon.svg' /></span>
             </div>
         </div>
     </Box>

@@ -11,13 +11,13 @@ import MobileHeader from "./MobileHeader";
 export const Navbar = () => {
     const path = [
         {
-          route: "/#",
+          route: "/",
           name: "Home",
           isSubMenu: false,
           list: null,
         },
         {
-          route: "/#",
+          route: "/air-marketer",
           name: "Products",
           isSubMenu: false,
           list: null,

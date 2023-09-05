@@ -20,9 +20,13 @@ export const HeroSection = () => {
             <div>
                 <p className='hero-paragraph'>With seamless integration, data-driven insights, and personalised automation, we're redefining success for businesses of all sizes. Join us in transforming CRM and driving unparalleled success.</p>
             </div>
+            <br/>
             <div style={{display: 'flex', justifyContent: 'center'}}>
-                <Button variant="outlined" className='hero-btn'>Start Free Trial &nbsp; <KeyboardArrowRightIcon /></Button>
+                <span><img style={{width: '50px', height: '95px', background: '#F3F4F6', borderRadius: 22}} src='/hero-scroll-icon.svg' /></span>
             </div>
+            {/* <div style={{display: 'flex', justifyContent: 'center'}}>
+                <Button variant="outlined" className='hero-btn'>Start Free Trial &nbsp; <KeyboardArrowRightIcon /></Button>
+            </div> */}
         </div>
     </Box>
     </Container>

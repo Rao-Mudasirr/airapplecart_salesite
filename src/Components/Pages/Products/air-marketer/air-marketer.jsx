@@ -1,6 +1,6 @@
 import React from 'react'
 import { AirMarketer } from '../../../Features/Products/air-marketer/AirMarketer';
-import {hero, features, benefits} from './air-marketr-data';
+import {hero, features, benefits, joinUs} from './air-marketr-data';
 
 export const Air_Marketer = () => {
   return (
@@ -8,6 +8,7 @@ export const Air_Marketer = () => {
         hero={hero}
         feature={features}
         benefits={benefits}
+        joinUs={joinUs}
     />
   )
 }

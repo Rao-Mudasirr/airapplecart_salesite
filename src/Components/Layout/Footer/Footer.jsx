@@ -19,7 +19,6 @@ export const Footer = () => {
             <Box className="footer-links" sx={{display: 'flex', justifyContent: 'center'}}>
                     <span className='footer-nav'>Cookie Policy</span>
                     <span className='footer-nav'>Privacy Policy</span>
-                    <span className='footer-nav'>Social Media Links</span>
                     <span className='footer-nav'>Data Ploicy</span>
                     <span className='footer-nav'>Contact Us</span>
             </Box>

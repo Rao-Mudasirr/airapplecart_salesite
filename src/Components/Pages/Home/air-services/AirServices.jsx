@@ -28,12 +28,28 @@ export const AirServices = () => {
     },
     {
       id: '5',
-      title: 'Grammer Tok',
+      title: 'Calendar Piper',
       desc: 'Modernize IT service and operations with an intuitive, completely integrated IT',
     },
+
     {
       id: '6',
       title: 'Flat Sign',
+      desc: 'Modernize IT service and operations with an intuitive, completely integrated IT',
+    },
+    {
+      id: '7',
+      title: 'Stenogofer',
+      desc: 'Modernize IT service and operations with an intuitive, completely integrated IT',
+    },
+    {
+      id: '8',
+      title: 'MLM',
+      desc: 'Modernize IT service and operations with an intuitive, completely integrated IT',
+    },
+    {
+      id: '9',
+      title: 'Grammer Tok',
       desc: 'Modernize IT service and operations with an intuitive, completely integrated IT',
     },
   ]
@@ -53,11 +69,15 @@ export const AirServices = () => {
             <Grid container>
               {
                 cardData?.map((val, index)=>(
-                  <Grid xs={12} sm={12} md={6} lg={6} xl={6} sx={{display: 'flex', justifyContent:'space-around'}}>
-                  <Card key={index} className='service-card'>
+                  <Grid xs={12} sm={12} md={6} lg={4} xl={4} sx={{display: 'flex', justifyContent:'space-around'}}>
+                  <Card variant='outlined' key={index} className='service-card'>
                       <div className='card-top'>
-                        <img src='wranch-image.png' alt='Icons'/>
-                        <EastOutlinedIcon className='arrow-icons' />
+                        <div style={{background: '#fafafa', padding: '7px 10px', borderRadius: '12px', border: '1px solid lightgray'}}>
+                          <img src='assets/Home/Wrench.svg' alt='Icons'/>
+                        </div>
+                        <div style={{padding: '7px 10px'}}>
+                          <img src='assets/Home/far-arrow.svg' alt='Icons'/>
+                        </div>
                       </div>
                       <br/>
                       <div className='card-title'>

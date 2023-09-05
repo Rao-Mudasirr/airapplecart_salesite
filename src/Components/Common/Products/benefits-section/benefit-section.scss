@@ -1,0 +1,38 @@
+.benefit-section{
+    .benefit-title{
+        color: #1F2937;
+        font-size: 40px;
+        font-family: Plus Jakarta Sans;
+        font-weight: 600;
+        line-height: 48px;
+        word-wrap: break-word
+    }
+    .benefit-description{
+        width: 90%;
+        color: #6B7280;
+        font-size: 16px;
+        font-family: Plus Jakarta Sans;
+        font-weight: 500;
+        line-height: 32px;
+        word-wrap: break-word
+    }
+    .benefit-list{
+        width: 80%;
+        .benefit-list-title{
+            color: #1F2937;
+            font-size: 20px;
+            font-family: Plus Jakarta Sans;
+            font-weight: 500;
+            line-height: 32px;
+            word-wrap: break-word
+        }
+        .benefit-list-description{
+            color: #6B7280;
+            font-size: 16px;
+            font-family: Plus Jakarta Sans;
+            font-weight: 400;
+            line-height: 28px;
+            word-wrap: break-word
+        }
+    }
+}
