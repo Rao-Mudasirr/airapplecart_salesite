@@ -23,18 +23,24 @@
 
 .feature-cards{
     margin-top: 63px;
-    .card-grid{
-        // background-color: #1F2937;
+    background-color: #fefefe;
+    // .card-grid{
         // display: flex;
         // justify-content: center;
         .card{
-            width: 450px;
-            height: 200px;
+            width: 340px;
+            margin-bottom: 5%;
+            height: 300px;
+            padding: 20px;
             background: white; 
-            box-shadow: 0px 31.009492874145508px 62.018985748291016px rgba(0, 0, 0, 0.03);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.03);
             border-radius: 5.17px;
             text-align: center;
             .card-icons{
+                background-color: aqua;
+                margin: auto;
+                display: flex;
+                justify-content: center;
                 width: 50px;
                 // height: 100%; 
                 opacity: 0.70;
@@ -42,7 +48,28 @@
                 padding: 20px; 
                 border-radius: 10px;
             }
+
+            .card-title {
+                color: #1D293F;
+                width: auto;
+                padding-top: 15px;
+                font-size: 20px;
+                font-family: "Plus Jakarta Sans";
+                font-weight: 500;
+                line-height: 24px;
+                word-wrap: break-word
+            }
+            .card-desc{
+                color: #6B7280;
+                width: auto;
+                padding-top: 20px;
+                font-size: 14px;
+                font-family: Plus Jakarta Sans;
+                font-weight: 400;
+                line-height: 28px;
+                word-wrap: break-word
+            }
         }
         
-    }
+    // }
 }

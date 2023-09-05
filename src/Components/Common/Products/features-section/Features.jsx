@@ -14,19 +14,19 @@ export const Features = ({feature}) => {
                 {
                     feature?.map((val, index) => (
                         <Grid key={val?.id} xs={12} sm={6} md={6} lg={4} xl={4}>
-                            <Box className='card-grid'>
-                                <Box className='card'>
+                            {/* <Box className='card-grid'> */}
+                                <div className='card'>
                                     <div className='card-icons' style={{background: val?.icon_color}}>
                                         <img src={val?.img} alt='Icon'/>
                                     </div>
                                     <div className='card-title'>
-                                        <div>{val?.title}</div>
+                                        {val?.title}
                                     </div>
                                     <div className='card-desc'>
-                                        <div>{val?.description}</div>
+                                        {val?.description}
                                     </div>
-                                </Box>
-                            </Box>
+                                </div>
+                            {/* </Box> */}
                         </Grid>
                     ))
                 }

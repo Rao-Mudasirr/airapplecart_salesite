@@ -54,6 +54,7 @@ export const features = [
 export const benefits = [
     {
         description: `Air Marketer is your comprehensive solution for executing successful marketing campaigns and achieving your business objectives. Just like the Marketing Hub in HubSpot, we're committed to helping you unlock your full marketing potential. Join the ranks of businesses that have experienced exponential growth with Air Marketer by Air Apple Cart.`,
+        image: '/assets/Products/Air-Marketer-benefit.png',
         benefit: [
             {
                 id: 1,
