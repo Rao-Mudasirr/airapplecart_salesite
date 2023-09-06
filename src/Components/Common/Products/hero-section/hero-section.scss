@@ -104,3 +104,21 @@
       }
       }
   }
+
+  @media screen and (max-width: 625px) {
+    .hero-top2 {
+      font-size: 55px !important;
+    }
+    .hero-section-content2{
+      width: 90%;
+    }
+  }
+ 
+  @media screen and (max-width: 300px) {
+    .hero-top2 {
+      font-size: 40px !important;
+    }
+    .hero-section-content2{
+      width: 100%;
+    }
+  }

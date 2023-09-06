@@ -11,20 +11,14 @@ export const JoinUs = ({joinUs}) => {
         </Box>
         <br/>
         <Box className='joinUs-box2'>
-            <Typography className='join-desc'>{joinUs?.description}</Typography>
+            <Typography className='join-desc'><span>{joinUs?.description}</span></Typography>
         </Box>
         <Box sx={{textAlign: 'center', marginTop:'40px'}}>
             <Button className='btn-join'>Join Us Today</Button>
         </Box>
-        {/* <div style={{background: 'linear-gradient(#FFFFFF00, #34CAB4)'}}> */}
-        <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
-            <img style={{position:'relative', bottom: '-75px', left: '-65px'}} src='assets/Products/Ornament 69.svg'/>
-            <img style={{position:'relative', bottom: '-75px', right: '-65px'}} src='assets/Products/Ornament 69.svg'/>
-        </Box>
-        {/* </div> */}
     </Box>
     <Box className="joinUs-image">
-        <img style={{width:'70%', position: 'relative', top: '-300px'}} src={joinUs?.img} />
+        <img style={{ position: 'relative', top: '-300px', width: '65%'}} src={joinUs?.img} />
     </Box>
     </React.Fragment>
   )

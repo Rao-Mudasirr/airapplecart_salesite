@@ -1,17 +1,28 @@
 .joinUs{
-    background-color: #0f1625;
+    background-image: url('../../../../../public/assets/Products/Benefits.png');
+    // background-color: #0f1625;
+    height: 100vh;
+    width: 100%;
     color: #fff;
-    padding: 80px;
+    // padding: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
     // text-align: center;
     .joinUs-box1{
-        text-align: center;
-        // padding-left: 570px;
-        // padding-right: 570px;
+        .join-title{
+
+            padding-top: 150px;
+            text-align: center;
+            padding-left: 570px;
+            padding-right: 570px;
+        }
     }
     .joinUs-box2{
-        text-align: center;
-        padding-left: 320px;
-        padding-right: 320px;
+        .join-desc{
+            text-align: center;
+            padding-left: 320px;
+            padding-right: 320px;
+        }
     }
     .join-title{
         // width: 34%;
@@ -49,6 +60,43 @@
 .joinUs-image{
     background-color: #fff;
     text-align: center;
-    height: 600px;
+    height: auto;
     // background-color: #38CAB5;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .joinUs-box1{
+        .join-title{
+
+            padding-top: 150px;
+            text-align: center;
+            padding-left: 50px !important;
+            padding-right: 50px !important;
+        }
+    }
+    .joinUs-box2{
+        .join-desc{
+            text-align: center;
+            padding-left: 50px !important;
+            padding-right: 50px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .joinUs-image{
+        img{
+            position: unset !important;
+            top: 0px !important;
+            width: 100% !important;
+        }
+    }
+    .btn-join{  
+        width: auto !important; 
+        margin-bottom: 50px !important;
+    }
+    .joinUs{
+        height: auto;
+    }
 }

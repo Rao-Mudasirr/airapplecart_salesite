@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './customers-section.scss'
 import Slider from 'react-slick'
 import { customers_data } from './customers-data'
@@ -8,13 +8,50 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export const CustomersSection = () => {
     const [sliderRef, setSliderRef] = useState(null)
+    const [slides, setSlidesToShow] = useState(3.5);
 
+  useEffect(() => {
+
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth >= 1350) {
+        setSlidesToShow(3.5);
+      } else {
+        setSlidesToShow(3);
+      }
+    };
+
+    // Initialize slidesToShow based on the initial window width
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+    
   const sliderSettings = {
     arrows: false,
-    slidesToShow: 3.5,
+    slidesToShow: slides,
     slidesToScroll: 1,
     infinite: false,
     responsive: [
+      {
+        breakpoint: 1350,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1160,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -23,6 +60,12 @@ export const CustomersSection = () => {
       },
       {
         breakpoint: 800,
+        settings: {
+          slidesToShow: 1.2,
+        },
+      },
+      {
+        breakpoint: 602,
         settings: {
           slidesToShow: 1,
         },

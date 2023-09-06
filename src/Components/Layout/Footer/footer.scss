@@ -17,8 +17,23 @@
     word-wrap: break-word
 }
 
+.footer-icons{
+    margin-right: 12px;
+}
+.below-footer-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 500px) {
     .footer-links {
         display: unset !important;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .below-footer-icons {
+        display: unset;
+        text-align: center;
     }
 }

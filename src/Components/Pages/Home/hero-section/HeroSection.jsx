@@ -6,8 +6,7 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 export const HeroSection = () => {
   return (
     <div className="Hero-Section">
-    {/* paddingLeft: '250px', paddingRight: '250px' */}
-    <Container sx={{display: 'flex', justifyContent: 'center', position: "relative"}}>
+    <Container sx={{display: 'flex', justifyContent: 'center', position: "relative", textAlign: 'center'}}>
     <Box>
         <img className='arrow-image' src='assets/Home/abstract.png' alt='Arrow Image' />
         <img className='stars-icons' src='assets/Home/Stars.svg' alt='Stars Icons' />
@@ -24,9 +23,6 @@ export const HeroSection = () => {
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 <span><img style={{width: '50px', height: '95px', background: '#F3F4F6', borderRadius: 22}} src='/hero-scroll-icon.svg' /></span>
             </div>
-            {/* <div style={{display: 'flex', justifyContent: 'center'}}>
-                <Button variant="outlined" className='hero-btn'>Start Free Trial &nbsp; <KeyboardArrowRightIcon /></Button>
-            </div> */}
         </div>
     </Box>
     </Container>

@@ -71,15 +71,16 @@
 
   @media screen and (max-width: 650px) {
     .customers-review{
-        display: unset;
+        display: unset !important;
     }
-    .controls button{
-        position: unset;
+    .controls{
+        text-align: center;
     }
 }
   
 @media screen and (max-width: 500px) {
     .customer-review-title{
-        font-size: x-large !important;
+        text-align: center;
+        font-size: xx-large !important;
     }
 }

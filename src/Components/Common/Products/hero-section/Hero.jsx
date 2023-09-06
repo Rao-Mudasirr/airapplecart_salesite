@@ -1,7 +1,6 @@
 import { Box, Button, Container, Grid } from '@mui/material'
 import React from 'react';
 import './hero-section.scss';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 export const Hero = ({hero}) => {
   return (
