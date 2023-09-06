@@ -8,12 +8,12 @@ services:
       target: runner
     ports:
       - "3000:3000"
-  web-server:
-    container_name: web-server
-    build:
-      dockerfile: Dockerfile
-      context: .
-      target: web-server
-    ports:
-      - "80:80"
-      - "443:443"
+  # web-server:
+  #   container_name: web-server
+  #   build:
+  #     dockerfile: Dockerfile
+  #     context: .
+  #     target: web-server
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
