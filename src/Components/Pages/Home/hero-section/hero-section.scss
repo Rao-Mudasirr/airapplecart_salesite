@@ -1,8 +1,17 @@
 .Hero-Section {
   width: 100%;
-  background-image: url("../../../../../public/assets/Home/Ellipse 101.png");
-  background-size: cover;
+  background-image: url("../../../../../public/assets/Products/Ellipse 101.svg");
+  // background-size: cover;
   background-repeat: no-repeat;
+  animation: diagonalMovement 2s linear infinite; /* Adjust the animation duration as needed */
+}
+@keyframes diagonalMovement {
+  0% {
+    background-position: 100% 100%; /* Start position at top-left */
+  }
+  100% {
+    background-position: 0 0; /* End position at bottom-right */
+  }
 }
 
 .hero-top {
@@ -28,6 +37,7 @@
   line-height: 96px;
   word-wrap: break-word;
 }
+
 .hero-section-content{
   padding-top: 95px;
   padding-bottom: 50px; 

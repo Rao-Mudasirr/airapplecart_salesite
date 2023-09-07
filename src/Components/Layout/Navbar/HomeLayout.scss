@@ -355,3 +355,30 @@
       margin-top: 30px;
     }
   }
+
+
+  .sub-menu {
+    position: absolute;
+    top: 100%; /* Position the sub-menu below the parent navlink */
+    // left: 0;
+    // display: none; /* Initially hidden */
+    background-color: #fff; /* Background color for the dropdown */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 200px;
+    z-index: 1;
+    text-align: start;
+    li {
+      color: #4B5563;
+      font-size: 16px;
+      font-family: Plus Jakarta Sans;
+      font-weight: 400;
+      line-height: 24px;
+      word-wrap: break-word; 
+      list-style: none;
+      padding: 10px;
+      position: relative;
+      left: -30px;
+      /* Your styles for sub-menu items here */
+    }
+  }

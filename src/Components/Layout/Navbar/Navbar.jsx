@@ -7,6 +7,7 @@ import "./HomeLayout.scss";
 import { NavLink } from "react-router-dom";
 import { useWindowDimensions } from "../hooks/useWindowDimensions";
 import MobileHeader from "./MobileHeader";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export const Navbar = () => {
     const path = [
@@ -17,13 +18,23 @@ export const Navbar = () => {
           list: null,
         },
         {
-          route: "/air-marketer",
+          route: "#",
           name: "Products",
           isSubMenu: false,
-          list: null,
+          list: [
+            { subRoute: '/air-marketer', subName: 'Air Marketer' },
+            { subRoute: '/air-sales', subName: 'Air Sales' },
+            { subRoute: '/air-service', subName: 'Air Services' },
+            { subRoute: '/air-operation', subName: 'Air Operations' },
+            { subRoute: '/air-calander', subName: 'Calendar Piper' },
+            { subRoute: '/air-flat-sign', subName: 'Flat Sign' },
+            { subRoute: '/air-stenogofer', subName: 'Stenogofer' },
+            { subRoute: '/air-mlm', subName: 'MLM' },
+            { subRoute: '/air-grammer-tok', subName: 'Grammer Tok' },
+          ],
         },
         {
-          route: "/#",
+          route: "/contact-us",
           name: "Contact Us",
           isSubMenu: false,
           list: null,
@@ -36,6 +47,17 @@ export const Navbar = () => {
         },
       ];
       const [active, setActive] = useState(false);
+      const [showSubMenu, setShowSubMenu] = useState(false);
+
+      const handleMouseEnter = () => {
+        if (isMobile) return;
+        setShowSubMenu(!showSubMenu);
+      };
+
+      // const handleMouseLeave = () => {
+      //   if (isMobile) return;
+      //   setShowSubMenu(false);
+      // };
     
       const { width } = useWindowDimensions();
       const isMobile = width < 900;
@@ -53,9 +75,27 @@ export const Navbar = () => {
                   <Box className="navbar-list-parent">
                     <ul className="navbar-list">
                       {path?.map((e) => (
+                        e?.list?.length > 0 ? (
+                          <React.Fragment>
+                              <NavLink onClick={handleMouseEnter} className={'nav-link'} to={e?.route}>{e?.name}</NavLink> &nbsp; <ExpandMoreIcon sx={{color: '#6b7280'}}/>
+                              {
+                                showSubMenu && ( 
+                                  <ul className="sub-menu">
+                                    {
+                                      e?.list?.map((data,index)=>(
+                                        <li key={index}><NavLink className={'nav-link'} onClick={handleMouseEnter} to={data?.subRoute}>{data?.subName}</NavLink></li>
+                                      ))
+                                    }
+                                  </ul>
+                                )
+                              }
+                              
+                          </React.Fragment>
+                        ) : (
                         <React.Fragment key={e?.name}>
                           <NavLink className={'nav-link'} to={e?.route}>{e?.name}</NavLink>
                         </React.Fragment>
+                        )
                       ))}
                     </ul>
                   </Box>

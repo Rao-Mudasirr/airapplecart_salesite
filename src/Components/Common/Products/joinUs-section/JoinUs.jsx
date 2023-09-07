@@ -18,7 +18,7 @@ export const JoinUs = ({joinUs}) => {
         </Box>
     </Box>
     <Box className="joinUs-image">
-        <img style={{ position: 'relative', top: '-200px', width: '65%'}} src={joinUs?.img} />
+        <img style={{ position: 'relative', top: '-200px', width: '75%'}} src={joinUs?.img} />
     </Box>
     </React.Fragment>
   )

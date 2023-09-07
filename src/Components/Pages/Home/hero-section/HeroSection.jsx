@@ -1,9 +1,38 @@
 import { Box, Button, Container, Grid } from '@mui/material'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './hero-section.scss';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+
+function getRandomColor(index) {
+  const letters = ['#111827', '#2ec7b1'];
+  if (index >= 0 && index < letters.length) {
+    return letters[index];
+  } else {
+    return '#2ec7b1'; // Default to black if the index is out of range
+  }
+}
 
 export const HeroSection = () => {
+  const [colorIndex, setColorIndex] = useState(0);
+  const [backgroundColor, setBackgroundColor] = useState(getRandomColor(1));
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      // Change to the next color
+      setColorIndex((prevIndex) => (prevIndex + 1) % 2);
+
+      // Set the new color after a 2-second pause
+      setTimeout(() => {
+        setBackgroundColor(getRandomColor(colorIndex));
+      }, 5000);
+    }, 4000); // Change color every 3 seconds (2-second pause + 1-second transition)
+
+    return () => clearInterval(intervalId);
+  }, [colorIndex]);
+
+  const divStyle = {
+    backgroundColor: getRandomColor(colorIndex),
+    transition: 'background-color 5s ease', // Add CSS transition
+  };
   return (
     <div className="Hero-Section">
     <Container sx={{display: 'flex', justifyContent: 'center', position: "relative", textAlign: 'center'}}>
@@ -13,7 +42,7 @@ export const HeroSection = () => {
     </Box>
     <Box className="hero-section-content">
         <div className='hero-content-size' style={{width:'60%'}}>
-            <div className='hero-top'>Unleash the Power of <span className='apple-cart'>Air AppleCart</span></div>
+            <div className='hero-top'>Unleash the Power of <span style={divStyle} className='apple-cart'>Air AppleCart</span></div>
             
             <div className='hero-middle'>Elevate Your CRM Game for Seamless Growth!</div>
             <div>

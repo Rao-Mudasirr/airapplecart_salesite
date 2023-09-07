@@ -2,7 +2,7 @@ import { Box, Button, Container, Grid } from '@mui/material'
 import React from 'react';
 import './hero-section.scss';
 
-export const Hero = ({hero}) => {
+export const Hero = ({hero, page}) => {
   return (
     <div className="Hero-Section2">
     <Container sx={{display: 'flex', justifyContent: 'center', position: "relative"}}>
@@ -13,7 +13,11 @@ export const Hero = ({hero}) => {
     <Box className="hero-section-content2">
         <div className='hero-content-size2'>
             <div className='hero-top2'>{hero[0]?.title}</div>
-            <div className='hero-middle2'>{hero[0]?.section}</div>
+            {
+                !page && (
+                    <div className='hero-middle2'>{hero[0]?.section}</div>
+                )  
+            }
             <div>
                 <p className='hero-paragraph2'>{hero[0]?.description}</p>
             </div>
