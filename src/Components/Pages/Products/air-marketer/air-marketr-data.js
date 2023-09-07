@@ -58,7 +58,7 @@ export const benefits = [
         benefit: [
             {
                 id: 1,
-                title: 'Enhanced Efficiency:',
+                title: 'Enhanced Efficiency',
                 description: `With Air Marketer's all-in-one platform, streamline your marketing efforts and eliminate the need for multiple tools. This saves time, reduces complexity, and increases efficiency.`,
                 img: '/assets/Products/status-up.svg',
             },

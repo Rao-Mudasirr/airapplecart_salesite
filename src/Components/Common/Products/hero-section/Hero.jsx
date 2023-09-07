@@ -12,10 +12,10 @@ export const Hero = ({hero}) => {
     </Box>
     <Box className="hero-section-content2">
         <div className='hero-content-size2'>
-            <div className='hero-top2'>Air Marketer</div>
-            <div className='hero-middle2'>Empower Your Marketing Efforts with Precision and Impact</div>
+            <div className='hero-top2'>{hero[0]?.title}</div>
+            <div className='hero-middle2'>{hero[0]?.section}</div>
             <div>
-                <p className='hero-paragraph2'>Welcome to Air Marketer, the flagship marketing solution offered by Air Apple Cart. Just like the Marketing Hub in HubSpot, Air Marketer is designed to revolutionize your marketing strategies and elevate your business to new heights. With a suite of powerful tools and features at your fingertips, Air Marketer empowers you to create, execute, and measure impactful marketing campaigns with ease.</p>
+                <p className='hero-paragraph2'>{hero[0]?.description}</p>
             </div>
             <br/>
             <div style={{display: 'flex', justifyContent: 'center'}}>
