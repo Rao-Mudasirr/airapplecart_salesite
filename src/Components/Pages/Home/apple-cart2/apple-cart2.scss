@@ -50,6 +50,7 @@
         .cart2-grid-right{
             display: flex;
             justify-content: center;
+            // text-align: center;
         }
     }
 }
@@ -103,10 +104,18 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    .cart2-grid-right{
-        img{
+@media screen and (max-width: 1200px) {
+    .cart2-grid-left{
+        .left{
             width: 100% !important;
         }
-     }
+    }
+    .cart2-grid-right-main{
+        .cart2-grid-right{
+            width: 100%;
+            img{
+                width: 100% !important;
+            }
+         }
+    }
 }

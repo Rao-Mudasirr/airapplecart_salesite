@@ -61,7 +61,7 @@ export const AirServices = () => {
               <div style={{color: '#6B7280', fontSize: '16px', fontFamily: 'Plus Jakarta Sans', fontWeight: '600px', lineHeight: '24px', letterSpacing: '1.25px', wordWrap: 'break-word'}}>AirApple Cart PRODUCTS</div>
             </Box>
             <Box sx={{display: 'flex', justifyContent: 'center'}}>
-              <strong style={{color: '#1F2937', fontSize: '48px', fontFamily: 'Plus Jakarta Sans', fontWeight: '600px', wordWrap: 'break-word'}}>All SaaS, no bloat.</strong>
+              <strong className='top-secondary-title' style={{color: '#1F2937', fontSize: '48px', fontFamily: 'Plus Jakarta Sans', fontWeight: '600px', wordWrap: 'break-word'}}>All SaaS, no bloat.</strong>
             </Box>
             <br/>
             <br/>
@@ -69,7 +69,7 @@ export const AirServices = () => {
             <Grid container>
               {
                 cardData?.map((val, index)=>(
-                  <Grid xs={12} sm={12} md={6} lg={4} xl={4} sx={{display: 'flex', justifyContent:'space-around'}}>
+                  <Grid xs={12} sm={12} md={6} lg={6} xl={4} sx={{display: 'flex', justifyContent:'space-around'}}>
                   <Card variant='outlined' key={index} className='service-card'>
                       <div className='card-top'>
                         <div style={{background: '#fafafa', padding: '7px 10px', borderRadius: '12px', border: '1px solid lightgray'}}>

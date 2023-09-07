@@ -21,3 +21,15 @@ word-wrap: break-word
         display: block !important;
     }
 }
+
+@media screen and (max-width: 550px) {
+    .heading-top{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .heading-top{
+        font-size: 20px;
+    }
+}

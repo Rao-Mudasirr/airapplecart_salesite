@@ -18,7 +18,7 @@ export const AppleCart2 = () => {
             <Grid container className='cart2-grid-section'>
                 <Grid xm={12} sm={12} mid={6} lg={6}>
                     <Box className="cart2-grid-left">
-                        <div style={{width: '80%'}}>
+                        <div className='left' style={{width: '80%'}}>
                             {
                                 cartData2?.map((data, index)=> (
                                     <section key={data?.id} style={{marginBottom: '20px'}}>
@@ -31,7 +31,7 @@ export const AppleCart2 = () => {
                     </Box>
                 </Grid>
                 
-                <Grid xm={12} sm={12} md={6} lg={6}>
+                <Grid xm={12} sm={12} md={12} lg={6} className='cart2-grid-right-main'>
                     <Box className='cart2-grid-right'>
                        <img src='assets/Home/applecart2.svg'/>
                     </Box>
