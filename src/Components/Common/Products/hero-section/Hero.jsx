@@ -22,9 +22,18 @@ export const Hero = ({hero, page}) => {
                 <p className='hero-paragraph2'>{hero[0]?.description}</p>
             </div>
             <br/>
-            <div style={{display: 'flex', justifyContent: 'center'}}>
-                <span><img style={{width: '50px', height: '95px', background: '#F3F4F6', borderRadius: 22}} src='/hero-scroll-icon.svg' /></span>
-            </div>
+            {page && (
+                <div style={{marginBottom: '20px'}}/>
+            )}
+            {
+                !page && (
+                <>
+                    <div style={{display: 'flex', justifyContent: 'center'}}>
+                        <span><img style={{width: '50px', height: '95px', background: '#F3F4F6', borderRadius: 22}} src='/hero-scroll-icon.svg' /></span>
+                    </div>
+                </>
+                )
+            }
         </div>
     </Box>
     </Container>
