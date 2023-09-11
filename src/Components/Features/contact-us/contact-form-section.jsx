@@ -5,7 +5,7 @@ import './contact-us.scss';
 export const ContactFormSection = () => {
   return (
     <Box className='contact-us-section'>
-        <Container className='contact-us-form'>
+        <Container maxWidth="xl" className='contact-us-form'>
             <Box className='contact-title-section'>
                 <Typography className='contact-title'>Contact Us</Typography>
             </Box>
