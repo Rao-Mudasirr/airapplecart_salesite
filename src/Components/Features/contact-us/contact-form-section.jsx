@@ -20,16 +20,16 @@ export const ContactFormSection = () => {
                 </Grid>
                 {/* <br/> */}
                 <Grid container>
-                    <Grid lg={12}>
+                    <Grid xs={12} sm={12} md={12} lg={12}>
                         <input placeholder='Company Name' />
                     </Grid>
-                    <Grid lg={12}>
+                    <Grid xs={12} sm={12} md={12} lg={12}>
                         <input placeholder='Phone Number' />
                     </Grid>
-                    <Grid lg={12}>
+                    <Grid xs={12} sm={12} md={12} lg={12}>
                         <textarea rows={4} placeholder='How did you hear about us?' />
                     </Grid>
-                    <Grid lg={12}>
+                    <Grid xs={12} sm={12} md={12} lg={12}>
                         <textarea rows={4} placeholder='Comments' />
                     </Grid>
                 </Grid>

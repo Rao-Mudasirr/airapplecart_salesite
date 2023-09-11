@@ -89,3 +89,30 @@
     -o-border-radius: 12px;
 }
 }
+
+@media screen and (max-width: 900px) {
+  .contact-us-section{
+    input{
+      width: 90%;
+    }
+    textarea{
+      width: 90%;
+    }
+    .btn-form{
+      width: 95%;
+    }
+  }
+}
+@media screen and (max-width: 541px) {
+  .contact-us-section{
+    input{
+      width: 90%;
+    }
+    textarea{
+      width: 90%;
+    }
+    .btn-form{
+      width: 95%;
+    }
+  }
+}
