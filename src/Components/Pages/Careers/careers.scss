@@ -91,7 +91,7 @@
     .arrow-image-1 {
         position: absolute;
         top: 120px;
-        left: 120px;
+        left: 10%;
         rotate: 15deg;
     }
 
@@ -101,11 +101,20 @@
         left: 75%;
     }
 
-    @media screen and (max-width: 900px) {
-        .arrow-image {
-            position: absolute;
-            top: 150px;
+    @media screen and (max-width: 1000px) {
+        .arrow-image-1 {
             left: 0px;
+        }
+        .stars-icons {
+            left: 85%;
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .arrow-image-1 {
+            display: none;
+        }
+        .stars-icons {
+            left: 90%;
         }
     }
 
@@ -128,46 +137,22 @@
         }
     }
 
-    @media screen and (max-width: 430px) {
-        .apple-cart {
-            color: #fafafa;
-            // width: 100%;
-            background-color: #2ec7b1;
-            padding-left: 40px;
-            padding-right: 40px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-radius: 40px;
-            display: inline-block;
-            font-size: 35px;
-            font-family: "Plus Jakarta Sans";
-            font-weight: 600;
-            // line-height: 96px;
-            word-wrap: break-word;
-        }
-
-        .hero-top {
-            // Unleash the Power
-            color: #111827;
-            font-size: 52px;
-            font-family: "Plus Jakarta Sans";
-            font-weight: 600;
-            line-height: 104px;
-            word-wrap: break-word;
-        }
-    }
-
+    
     @media screen and (max-width: 650px) {
-        .arrow-image {
+        .hero-top{
+            font-size: 42px;
+        }
+        .arrow-image-1 {
             display: none;
         }
 
         .stars-icons {
             display: none;
         }
-
+        
         .hero-section-content {
             display: unset;
+            padding-bottom: 0px;
             justify-content: unset;
 
             .hero-content-size {
@@ -178,3 +163,31 @@
 
 
 }
+        @media screen and (max-width: 430px) {
+            .apple-cart {
+                color: #fafafa;
+                // width: 100%;
+                background-color: #2ec7b1;
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 40px;
+                display: inline-block;
+                font-size: 35px;
+                font-family: "Plus Jakarta Sans";
+                font-weight: 600;
+                // line-height: 96px;
+                word-wrap: break-word;
+            }
+    
+            .hero-top {
+                // Unleash the Power
+                color: #111827;
+                font-size: 32px !important;
+                font-family: "Plus Jakarta Sans";
+                font-weight: 600;
+                line-height: 104px;
+                word-wrap: break-word;
+            }
+        }

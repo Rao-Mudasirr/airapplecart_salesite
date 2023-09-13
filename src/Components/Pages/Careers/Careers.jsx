@@ -16,7 +16,7 @@ export const Careers = () => {
                         </div>
                     </Box>
                 </Box>
-                <Box sx={{ my: '40px' }} className="job-openings">
+                <Box sx={{ mb: '40px',mt:{md:'40px',xs:0} }} className="job-openings">
                     <Box
                         sx={{
                             display: "flex",
