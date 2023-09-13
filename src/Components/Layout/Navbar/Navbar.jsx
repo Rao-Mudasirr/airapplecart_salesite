@@ -34,16 +34,22 @@ export const Navbar = () => {
           ],
         },
         {
-          route: "/contact-us",
-          name: "Contact Us",
-          isSubMenu: false,
-          list: null,
-        },
-        {
           route: "/#",
           name: "Prcing",
           isSubMenu: true,
           list: [],
+        },
+        {
+          route: "/careers",
+          name: "Careers",
+          isSubMenu: false,
+          list: null,
+        },
+        {
+          route: "/contact-us",
+          name: "Contact Us",
+          isSubMenu: false,
+          list: null,
         },
       ];
       const [active, setActive] = useState(false);

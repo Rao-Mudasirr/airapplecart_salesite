@@ -16,6 +16,7 @@ import { Air_Stenogofer } from './Components/Pages/Products/air-stenogofer/air-s
 import { Air_Mlm } from './Components/Pages/Products/air-mlm/air-mlm';
 import { Air_Grammer_Tok } from './Components/Pages/Products/air-grammer-tok/air-grammer-tok';
 import { Contact_Us } from './Components/Pages/ContactUs/contact-us';
+import { Careers } from './Components/Pages/Careers/Careers';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Route path="/air-mlm" element={<Layout><Air_Mlm /></Layout>} />
       <Route path="/air-grammer-tok" element={<Layout><Air_Grammer_Tok /></Layout>} />
       <Route path="/contact-us" element={<Layout><Contact_Us /></Layout>} />
+      <Route path="/careers" element={<Layout><Careers/></Layout>} />
     </Routes>
   );
 }
