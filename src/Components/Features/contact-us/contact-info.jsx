@@ -6,7 +6,7 @@ import { info_data } from './contact-us-data';
 export const ContactInfo = () => {
   return (
     <React.Fragment>
-        <Container maxWidth="xl" sx={{marginTop: '100px', marginBottom: '70px'}}>
+        <Container maxWidth="xl" sx={{bgcolor:'#fff', marginTop: '100px', marginBottom: '70px'}}>
             <Box sx={{textAlign: 'center'}}>
                 <Typography className='contact-info-title'>Contact Information</Typography>
                 <Typography className='contact-info-sub-title'>Have any questions? We'd love to hear from you.</Typography>
@@ -20,11 +20,11 @@ export const ContactInfo = () => {
                             <div className='info-icons' style={{background: '#f7f7f9'}}>
                                 <img src={data?.icon} alt='Icon'/>
                             </div>
-                            <Box>
+                            <Box sx={{mb:'36px'}}>
                                 <Typography className="info-title">{data?.title}</Typography>
                                 <Typography className="info-description">{data?.description}</Typography>
                             </Box>
-                            <hr style={{width: '90%'}}/>
+                            <hr color='#E5E7EB' style={{width: '90%'}}/>
                             <Box>
                                 <Typography className="info-email">{data?.email}</Typography>
                                 <Typography className="info-number">{data?.number}</Typography>

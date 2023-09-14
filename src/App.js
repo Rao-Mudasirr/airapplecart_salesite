@@ -17,6 +17,7 @@ import { Air_Mlm } from './Components/Pages/Products/air-mlm/air-mlm';
 import { Air_Grammer_Tok } from './Components/Pages/Products/air-grammer-tok/air-grammer-tok';
 import { Contact_Us } from './Components/Pages/ContactUs/contact-us';
 import { Careers } from './Components/Pages/Careers/Careers';
+import { ChooseAPlan } from './Components/Pages/ChooseAPlan/ChooseAPlan';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
       <Route path="/air-grammer-tok" element={<Layout><Air_Grammer_Tok /></Layout>} />
       <Route path="/contact-us" element={<Layout><Contact_Us /></Layout>} />
       <Route path="/careers" element={<Layout><Careers/></Layout>} />
+      <Route path="/pricing/chooese-a-plan" element={<Layout><ChooseAPlan/></Layout>} />
     </Routes>
   );
 }

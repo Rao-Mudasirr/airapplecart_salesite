@@ -7,7 +7,7 @@ import { VisitUs } from './visit-us'
 
 export const ContactUs = () => {
   return (
-    <Box sx={{backgroundColor: '#fbfbfb'}}>
+    <Box className="ContactUs">
         <Hero_Section />
         <ContactFormSection />
         <ContactInfo />

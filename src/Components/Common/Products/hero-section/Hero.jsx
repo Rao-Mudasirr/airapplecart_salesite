@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid } from '@mui/material'
+import { Box, Container } from '@mui/material'
 import React from 'react';
 import './hero-section.scss';
 
@@ -7,7 +7,7 @@ export const Hero = ({hero, page}) => {
     <div className="Hero-Section2">
     <Container sx={{display: 'flex', justifyContent: 'center', position: "relative"}}>
     <Box>
-        <img className='arrow-image2' src='assets/Home/abstract.png' alt='Arrow Image' />
+        <img className='arrow-image2' src='assets/Home/abstract.png' alt='Arrow' />
         <img className='stars-icons2' src='assets/Home/Stars.svg' alt='Stars Icons' />
     </Box>
     <Box className="hero-section-content2">
